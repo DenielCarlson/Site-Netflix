@@ -1,0 +1,91 @@
+@UTF-8;
+
+*{
+    margin: 0px;
+}
+
+
+header {
+    height: 650px;
+
+     background-image: url(Media/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    box-shadow: inset 0px 250px 500px  black;
+
+
+}
+
+header > img{
+    max-width: 180px;
+    min-width: 120px;
+
+    margin-left: 150px;
+}
+
+#mainText{
+    font-weight: bolder;
+    font-size: 3em;
+
+    max-width: 1500px;
+
+    margin: auto;
+    margin-top: 100px;
+}
+
+.smallText{
+    font-size: 1.3em;
+}
+
+#assineHoje{
+    margin-top: 20px;
+}
+
+#emailText{
+    margin-top: 30px;
+}
+
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1em;
+
+    text-align: center;
+}
+
+div#email{
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+div#email > input{
+    width: 435px;
+    height: 50px;
+
+    border-radius: 10px;
+
+    background: rgba(10, 10, 10, 0.5);
+
+    color: white;
+    font-weight: bolder;
+}
+
+div#email > button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+
+    background-color: red;
+    color: white;
+
+    width: 160px;
+    height: 60px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px, 0px, 0px, black;
+    margin: auto;
+}
