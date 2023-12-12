@@ -4,9 +4,12 @@
     margin: 0px;
 }
 
+root{
+}
+
 
 header {
-    height: 650px;
+    height: 700px;
 
     background-image: url(Media/background.jpg);
     background-size: cover;
@@ -16,6 +19,50 @@ header {
     box-shadow: inset 0px 0px 100px black;
 
     display: flex;
+}
+
+nav{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#LanguageSelect{
+    width: 120px;
+    height: 30px;
+
+    position: absolute;
+
+    top: 30px;
+    right: 260px;
+
+    background-color: rgba(0, 0, 0, .3);
+
+    border-width: 1px;
+    border-style: double;
+    border-color: white;
+
+    border-radius: 2px;
+
+    color: white;
+}
+
+nav > button{
+    position: absolute;
+    right: 170px;
+    top: 27px;
+
+    height: 35px;
+    width: 70px;
+    background-color: red;
+    color: white;
+
+    border-radius: 5px;
+    border-width: 0px;
+
+
 }
 
 div#gradientBottom{
@@ -30,6 +77,15 @@ div#gradientTop{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
 
     flex-grow: 1;
+
+    display: grid;
+    
+    
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
 }
 
 #netflix > img{
@@ -51,9 +107,9 @@ div#gradientTop{
     font-size: 3em;
 
     max-width: 1500px;
+    min-width: 500px;
 
-    margin: auto;
-    margin-top: 100px;
+    margin: 100px 0px auto auto;
 }
 
 #assineHoje{
@@ -111,5 +167,48 @@ div#email > button{
     border: 0.5px solid black;
 
     box-shadow: 0px, 0px, 0px, black;
-    margin: auto;
+    margin-top: 0px;
+    padding-bottom: 6px;
+}
+
+#DivDefaultPlan{
+    background-image: radial-gradient(circle at 50% 15%, #86102D, #86102D, #2E1846,#0C1746, #000413);
+
+    height: 150px;
+
+    position: absolute;
+    right: 100px;
+    left: 100px;
+
+    margin-top: -75px;
+
+}
+
+#PlanBlockPosition{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+
+}
+
+#DivDefaultPlan > #PlanBlockPosition > h2{
+    font-size: 1.2em;
+    text-align: left;
+    margin: 30px auto 0px auto;
+}
+
+#DivDefaultPlan > #PlanBlockPosition > p{
+    margin: 10px auto 0px auto;
+    text-align: left;
+}
+
+#DivDefaultPlan > #PlanBlockPosition > a{
+    font-size: 1.2em;
+    color: dodgerblue;
+    text-align: left;
+    display: block;
+    margin: 10px auto 0px 0px;
 }
