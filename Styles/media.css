@@ -1,0 +1,63 @@
+@media(max-width: 950px){
+
+    header{
+        height: 600px;
+    }
+
+    nav > button{
+        right: 0;
+        margin-right: 10px;
+    }
+
+    #select-header{
+        position: absolute;
+        right: 0;
+        margin-right: 100px;
+
+        width: 50px;
+    }
+
+    #netflix > img{
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    #mainText{
+        font-size: 2em;
+    }
+
+    #assineHoje{
+        font-size: 1em;
+    }
+
+    #emailText{
+        font-size: 1em;
+    }
+
+    #DivDefaultPlan{
+
+        margin-top: 0px;
+
+        position: absolute;
+        right: 20px;
+        left: 20px;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1280px){
+
+    #netflix > img{
+        margin-left: 10px;
+    }
+
+    nav > button{
+        right: 0;
+        margin-right: 10px;
+    }
+
+    #select-header{
+        right: 0;
+        margin-right: 100px;
+    }
+
+}

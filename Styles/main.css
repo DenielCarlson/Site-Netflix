@@ -1,0 +1,161 @@
+
+.text-main{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div#tv{
+    display: flex;
+
+    justify-content: space-between;
+
+    background-color: black;
+
+    margin-bottom: 10px;
+
+    padding: 200px 200px 100px 200px;
+    
+    height: 400px;
+
+
+}
+
+div#tv-text{
+    width: 750px;
+
+    margin-top: 70px;
+}
+
+div#tv-text > h2{
+    font-size: 3em;
+    font-weight: bolder;
+
+    margin-bottom: 20px;
+}
+
+div#tv-text > p{
+    font-size: 1.5em;
+}
+
+#img-tv{
+    width: 750px;
+    height: auto;
+
+    align-self: center;
+
+    margin-bottom: 145px;
+}
+
+
+
+div#devices{
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+
+    padding: 50px 300px 80px 200px;
+    margin-bottom: 10px;
+
+    background-color: black;
+}
+
+div#devices-text {
+    width: 720px;
+    height: 120px;
+
+    margin-top: 180px ;
+}
+
+
+div#devices-text > h2{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+div#devices-text > p{
+    font-size: 1.5em;
+
+    margin-top: 20px;
+}
+
+#img-devices{
+    width: 750px;
+    height: auto;
+}
+
+
+
+div#kids{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 50px 150px 80px 200px;
+    margin-bottom: 10px;
+    
+    background-color: black;
+}
+
+div#kids-text{
+
+    width: 750px;
+    text-align: left;
+}
+
+div#kids-text > h2{
+    font-size: 3em;
+
+    margin-bottom: 20px;
+}
+
+div#kids-text > p{
+    font-size: 1.5em;
+}
+
+#img-kids{
+    height: auto;
+    width: 700px;
+}
+
+
+
+div#downloads{
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 320px 80px 200px;
+
+    background-color: black;
+}
+
+div#downloads-text{
+    text-align: left;
+
+    width: 600px;
+}
+
+div#downloads-text > h2{
+    font-size: 3em;
+
+    margin-bottom: 20px;
+}
+
+div#downloads-text > p{
+
+    font-size: 1.5em;
+}
+
+#img-downloads{
+    width: 700px;
+    height: auto;
+}
+
+
