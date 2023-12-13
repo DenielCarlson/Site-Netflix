@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/media.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/questions.css">
 
     <title>Netflix</title>
 </head>
@@ -144,12 +145,20 @@
         </div>
     </main>
 
-    <div id = "Questions">
+
+
+
+    <div id = "div-questions">
+
+        <h2 id = "questions-text">
+            Perguntas frequentes
+        </h2>
+
         <ul>
             <li id = "option-one" class = "text-main">
                 <h2>O que é a netflix</h2>
 
-                <div id = "div-option-one" class = "text-main">
+                <div id = "div-option-one" class = "div-option">
 
                     <p>
                         A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
@@ -166,7 +175,7 @@
             <li id = "option-two" class = "text-main">
                 <h2>Quanto custa a Netflix?</h2>
 
-                <div id = "div-option-two" class = "text-main">
+                <div id = "div-option-two" class = "div-option">
 
                     <p>
                         Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$ 18,90 a R$ 55,90 por mês. Sem contrato nem taxas extras.
@@ -178,7 +187,7 @@
             <li id = "option-three" class = "text-main">
                 <h2>Onde posso assistir?</h2>
 
-                <div id = "div-option-three" class = "text-main">
+                <div id = "div-option-three" class = "div-option">
 
                     <p>
                         Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
@@ -194,7 +203,7 @@
             <li id = "option-four" class = "text-main">
                 <h2>Como faço para cancelar?</h2>
 
-                <div id = "div-option-four" class = "text-main">
+                <div id = "div-option-four" class = "div-option">
 
                     <p>
                         A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
@@ -206,7 +215,7 @@
             <li id = "option-five" class = "text-main">
                 <h2>O que posso assistir na Netflix?</h2>
 
-                <div id = "div-option-five" class = "text-main">
+                <div id = "div-option-five" class = "div-option">
 
                     <p>
                         A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
@@ -218,7 +227,7 @@
             <li id = "option-six" class = "text-main">
                 <h2>A Netflix é adequada para crianças?</h2>
 
-                <div id = "div-option-six">
+                <div id = "div-option-six" class =  "div-option">
 
                     <p>
                         A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
@@ -233,18 +242,24 @@
 
         </ul>
 
-    </div id = "emailFooter" class = "email">
-        
+    </div>
+       
+    
+    <div  id = "email-footer" class = "email" >
+
+        <h2>
+            Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+        </h2>
+
         <input type="text" name="Email" placeholder="Email">
 
         <button>Vamos lá</button>
-    <div >
 
     </div>
 
     <footer>
         <p>
-            Dúvidas? Ligue 0800 591 2876
+            Dúvidas? Ligue <a href="tel: 0800 591 2876">0800 591 2876</a>
         </p>
 
         <ul>
@@ -345,9 +360,9 @@
             </option>
         </select>
 
-        <P>
+        <p id = "netflix-footer">
             Netflix Brasil
-        </P>
+        </p>
     </footer>
 
 </body>

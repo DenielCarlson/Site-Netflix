@@ -132,6 +132,7 @@ div#downloads{
     align-items: center;
 
     padding: 60px 320px 80px 200px;
+    margin-bottom: 10px;
 
     background-color: black;
 }

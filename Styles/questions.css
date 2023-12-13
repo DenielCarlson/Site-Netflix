@@ -1,0 +1,128 @@
+
+#div-questions{
+    display: flex;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 70px 200px 20px 200px;
+    background-color: black;
+}
+
+#questions-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: white;
+
+    margin-bottom: 30px;
+
+    align-self: center;
+}
+
+#div-questions > ul{
+    padding-left: 0px;
+}
+
+#div-questions li{
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+
+    padding: 2px 20px 2px 20px;
+
+    list-style: none;
+
+    margin-bottom: 10px;
+    margin-left: 0px;
+
+    height: 80px;
+
+    background-color: #302f2f;
+    
+}
+
+#div-questions li > h2{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#div-questions li::after{
+    font-family: 'Times New Roman', Times, serif;
+    content: "+";
+    font-size: 3em;
+    
+    flex: 1;
+    text-align: right;
+}
+
+.div-option{
+    display: none;
+}
+
+#div-questions li:hover{
+    background-color: #464444 ;
+}
+
+#email-footer{
+    background-color: black;
+
+    padding: 30px 0px 80px 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#email-footer > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 100;
+
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+
+    padding: 80px 200px 20px 200px;
+}
+
+footer > p{
+    color: rgb(182, 180, 180);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 30px;
+}
+
+footer > p > a{
+    color: rgb(182, 180, 180);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > ul{
+    columns: 4;
+    padding-left: 0px;
+}
+
+footer > ul > li{
+    list-style: none;
+
+    margin-bottom: 20px;
+}
+
+footer > ul > li > a{
+    color: rgb(182, 180, 180);
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.9em;
+}
+
+footer > select{
+    background-color: rgba(51, 50, 50, 0.5);
+    margin-top: 20px;
+}
+
+#netflix-footer{
+    margin-top: 20px;
+    font-size: 0.9em;
+}
