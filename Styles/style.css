@@ -8,6 +8,8 @@
     --default-shadow-color: black;
     --default-select-input-color:  #23232380;
     --default-background-main-color: black;
+    --default-background-color-button-questions: #2D2D2D;
+    --default-background-color-button-questions-onhovered: #414141;
 }
 
 *{
@@ -212,7 +214,7 @@ header > nav{
     justify-content: center;
     align-items: start;
 
-    background-image: radial-gradient(circle at 50% 5%, #87112E,  #5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
+    background-image: radial-gradient(circle at 50% -150%, #87112E, #671437, #671437,#5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
 
     margin-top: -65px;
 
@@ -261,7 +263,7 @@ main img{
     align-self: flex-start;
 
     min-width: 400px;
-    max-width: 30%;
+    max-width: 31%;
 }
 /*tv - main*/
 #tv{
@@ -269,7 +271,7 @@ main img{
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     padding-top: 100px;
     padding-bottom: 70px;
 
@@ -299,7 +301,7 @@ main img{
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     padding-top: 50px;
     padding-bottom: 80px;
 
@@ -329,7 +331,7 @@ main img{
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     padding-top: 50px;
     padding-bottom: 60px;
 
@@ -357,7 +359,7 @@ main img{
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     padding-top: 80px;
     padding-bottom: 70px;
 
@@ -378,6 +380,135 @@ main img{
 #mobile-downloads-text > p{
     font-size: 1.5em;
     
+}
+
+/*Perguntas - footer*/
+#div-questions{
+    display: flex;
+    flex-direction: column;
+    
+
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    background-color: var(--default-background-main-color);
+}
+
+#questions-text{
+    text-align: center;
+
+    font-size: 3em;
+    font-weight: bolder;
+
+    margin-bottom: 20px;
+}
+
+#div-questions > ul{
+    list-style: none;
+
+    padding-left: 0px;
+}
+
+#div-questions > ul > li{
+    display: flex;
+    align-items: center;
+
+    margin: 0px 19%;
+    margin-bottom: 9px;
+    padding: 0px 20px;
+
+    height: 85px;
+
+    background-color: var(--default-background-color-button-questions);
+}
+
+#div-questions > ul > li:hover{
+    background-color: var(--default-background-color-button-questions-onhovered);
+}
+
+#div-questions > ul > li::after{
+    content: "+";
+
+    flex: 1;
+
+    text-align: end;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+}
+
+#div-questions > ul > li > h2{
+    text-align: left;
+}
+
+#div-questions
+
+.div-option{
+    display: none;
+}
+
+/*email -footer*/
+
+#email-title-footer{
+    text-align: center;
+
+    font-size: 1.3em;
+    background-color: var(--default-background-main-color);
+}
+
+#email-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 7px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    background-color: var(--default-background-main-color);
+}
+
+/*Footer do footer kkkk*/
+#footer-footer{
+    padding-top: 50px;
+
+    background-color: var(--default-background-main-color);
+}
+
+#phone-number{
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+#footer-footer > ul {    
+    list-style: none;
+    columns: 4;
+
+    margin: 0px 20%;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+#footer-footer > ul > li{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+#select-footer{
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+#netflix-footer{
+    margin-bottom: 40px;
+    margin-left: 20%;
+}
+
+#creditos{
+    background-color: #0D1A4C;
+    text-align: center;
+
+    mar
 }
 
 
