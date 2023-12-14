@@ -1,235 +1,293 @@
 @UTF-8;
 
+:root{
+    --default-background-color: #232323;
+    --default-button-color: red;
+    --default-button-color-onclicked: rgb(196, 0, 0);
+    --default-font-color:  white;
+    --default-shadow-color: black;
+    --default-select-input-color:  #23232380;
+}
+
 *{
     margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: var(--default-font-color);
+
+    z-index: 0;
 }
 
 body{
-    background-color: #232323;
-    min-width: 350px;
+    background-color: var(--default-background-color);
 }
 
-root{
-}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
 
+    background-image: url("../Media/background.jpg");
+    background-position: center center;
+    background-size: cover;
 
-header {
+    text-align: center;
+
+    box-shadow: inset 0px 200px 500px var(--default-shadow-color);
+
     height: 700px;
 
-    background-image: url(../Media/background.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; 
+    position: relative;
+}
 
-    box-shadow: inset 0px 0px 100px black;
-
+/*navbar*/
+header > nav{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-nav{
-    position: absolute;
-
-    top: 0;
-    right: 0;
-    left: 0;
+/*Ícone da netflix*/
+#netflix-icon > img{
+    width: 180px;
 }
 
-.LanguageSelect{
-    width: 120px;
+/*Idiomas*/
+.select-languages{
+    background-color: var(--default-select-input-color);
+
+    text-align: center;
+    font-size: 1em;
+
+    border-radius: 5px;
+
     height: 30px;
-
-    border-width: 1px;
-    border-style: double;
-    border-color: white;
-
-    border-radius: 2px;
-
-    color: white;
+    width: 150px;
 }
 
-#select-header{
-    position: absolute;
-
-    top: 30px;
-    right: 260px;
-
-    background-color: rgba(0, 0, 0, .3);
-
+.select-languages:active{
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 3px;
 }
 
-nav > button{
-    position: absolute;
-    right: 170px;
-    top: 27px;
 
-    height: 35px;
-    width: 70px;
-    background-color: red;
-    color: white;
+/*Button-Entrar*/
+#language-login > button{
+    background-color: var(--default-button-color);
 
     border-radius: 5px;
     border-width: 0px;
 
-
+    height: 30px;
+    width: 70px;
 }
 
-div#gradientBottom{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
-
-    flex-grow: 1;
-
-    display: flex;
+#language-login> button:hover{
+    background-color: var(--default-button-color-onclicked);
 }
 
-div#gradientTop{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
-
-    flex-grow: 1;
-
-    display: grid;
-    
-    
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    
-}
-
-#netflix > img{
-    width: 180px;
-
-    margin-left: 150px;
-}
-
-.text{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-
-    text-align: center;
-}
-
-#mainText{
-    font-weight: bolder;
+/*Título pricipal e textos do header*/
+#title-header{
     font-size: 3em;
+    font-weight: bolder;
 
-    max-width: 1500px;
-    min-width: 500px;
-
-    margin: 10% 0px auto auto;
+    margin: 0px 16%;
+    margin-top: 150px;
 }
 
-#assineHoje{
-    font-size: 1.3em;
-    font-weight: normal;
-    margin-top: 20px;
-}
+#text-join{
+    font-size: 1.5em;
 
-#emailText{
-    font-size: 1.3em;
-    font-weight: normal;
     margin-top: 30px;
 }
 
-header > p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 1em;
+#text-email{
+    font-size: 1.3em;
 
-    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-div.email{
-    text-align: center;
+/*Input de email - Header*/
+#email-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.email-box{
+    background-color: var(--default-select-input-color);
+
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(134, 134, 134);
+
+    padding: 0px 20px;
+    height: 50px;
+    width: 350px;
+
+    position: relative;
+}
+
+.email-box > input{
+    background-color: transparent;
+    
+    border-width: 0px;
+
+    padding-top: 25px;
+
+    height: 25px;
+    width: 345px;
+}
+
+.email-box > input:enabled{
+   border-width: 0px; 
+   outline-width: 0px;
+}
+
+.email-box > label{
+    position: absolute;
+
+    top: 17px;
+}
+
+.email-box:active{
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: 2px;
+    outline-color: var(--default-font-color);
+
+    label{
+        font-size: 0.8em;
+
+        position: absolute;
+        top: 5px;
+    }
+}
+
+/*Button do email - Header*/
+.email-button{
+    background-color: var(--default-button-color);
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+    border-radius: 3px;
+    border-width: 0px;
+
+    margin-left: 10px;
+
+    height: 50px;
+    width: 150px;
+}
+
+.email-button:hover{
+    background-color: var(--default-button-color-onclicked);
+}
+
+/*Sombra na parte inferior do header*/
+#div-shadow{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    z-index: -1;
+}
+
+/*Plano padrão destacado*/
+#div-default-plan{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    background-image: radial-gradient(circle at 50% 5%, #87112E,  #5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
+
+    margin-top: -65px;
+
+    min-height: 130px;
+    max-height: 500px;
+
+    position: absolute;
+    right: 60px;
+    left: 60px;
+
+    z-index: 2;
+}
+
+#div-default-plan-text{
+    margin-left: 100px;
+
+    height: 100%;
+
+}
+
+#div-default-plan-text > h2{
+    font-size: 1.3em;
+    font-weight: bolder;
 
     margin-top: 20px;
 }
 
-div.email > input{
+#div-default-plan-text > p{
+    font-weight: bolder; 
 
-    width: 435px;
-    height: 50px;
-
-    border-radius: 3px;
-    border: 0.5px solid lightgray;
-
-    background: rgba(10, 10, 10, 0.5);
-
-    color: white;
-    font-weight: bolder;
-
-    padding-left: 20px;
-
+    margin-top: 10px;
 }
 
-.email > input::placeholder{
-    font-size: 1.3em;
-
-    position: absolute;
-
-    left: 20px;
-}
-
-
-div.email > button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    font-weight: bolder;
-
-    background-color: red;
-    color: white;
-
-    width: 160px;
-    height: 60px;
-
-    border-radius: 3px;
-    border: 0.5px solid black;
-
-    box-shadow: 0px, 0px, 0px, black;
-    margin-top: 0px;
-    padding-bottom: 6px;
-}
-
-#DivDefaultPlan{
-    background-image: radial-gradient(circle at 50% 15%, #86102D, #86102D, #2E1846,#0C1746, #000413);
-
-    height: 150px;
-
-    position: absolute;
-    right: 80px;
-    left: 80px;
-
-    margin-top: -75px;
-
-}
-
-#PlanBlockPosition{
-    position: absolute;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-
-}
-
-#DivDefaultPlan > #PlanBlockPosition > h2{
-    font-size: 1.2em;
-    text-align: left;
-    margin: 30px auto 0px auto;
-}
-
-#DivDefaultPlan > #PlanBlockPosition > p{
-    margin: 10px auto 0px auto;
-    text-align: left;
-}
-
-#DivDefaultPlan > #PlanBlockPosition > a{
-    font-size: 1.2em;
-    color: dodgerblue;
-    text-align: left;
+#div-default-plan-text > a{
     display: block;
-    margin: 10px auto 0px 0px;
+
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: #448ED6;
+
+    margin-top: 10px;
 }
+
+/*tv - main*/
+#tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    background-color: var(--default-shadow-color);
+}
+
+#tv-text{
+    width: 500px;
+
+}
+
+#tv-text > h2{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#tv-text > p{
+    font-size: 1.5em;
+}
+
+#img-tv{
+
+    align-self: flex-start;
+
+    min-width: 500px;
+    max-width: 30%;
+}
+
 
 
