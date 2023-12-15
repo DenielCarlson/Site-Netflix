@@ -1,4 +1,4 @@
-@UTF-8;
+@charset "UTF-8";
 
 :root{
     --default-background-color: #232323;
@@ -49,8 +49,10 @@ header{
 header > nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    margin: 0px 10%;
 }
 
 /*Ícone da netflix*/
@@ -214,7 +216,7 @@ header > nav{
     justify-content: center;
     align-items: start;
 
-    background-image: radial-gradient(circle at 50% -150%, #87112E, #671437, #671437,#5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
+    background-image: radial-gradient(circle at 50% -150%, #87112E, #87112E, #87112E,#5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
 
     margin-top: -65px;
 
@@ -507,8 +509,4 @@ main img{
 #creditos{
     background-color: #0D1A4C;
     text-align: center;
-
-    mar
 }
-
-
