@@ -72,6 +72,23 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 960px) and (max-width: 1279px){
 
     header{
@@ -150,7 +167,20 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 959px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 999px){
     header{
         height: 500px;
     }
@@ -165,7 +195,7 @@
 
     #title-header{
         font-size: 2em;
-        margin: 110px 5% 0px 5%;
+        margin: 70px 5% 0px 5%;
     }
 
     #text-join{
@@ -178,6 +208,9 @@
 
     #div-default-plan{
         margin-top: 0px;
+
+        background-image: radial-gradient(circle at 50% 0%, #87112E,  #87112E, #48163F, #261948, #0D1A4C, #000413);
+
     }
 
     main img{
@@ -294,6 +327,10 @@
         font-size: 1.2em;
     }
 
+    #email-title-footer{
+        font-size: 1.1em;
+    }
+
     #phone-number{
         margin-left: 3%;
     }
@@ -312,3 +349,212 @@
         margin-left: 3%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 599px){
+    header{
+        height: 500px;
+    }
+
+    header > nav{
+        margin: 8px 2.5% 0px 2.5%;
+    }
+
+    #language-header{
+        width: 60px;
+    }
+
+    #netflix-icon > img{
+        width: 110px;
+    }
+
+    #title-header{
+        font-size: 2em;
+        margin: 50px 5% 0px 5%;
+    }
+
+    #text-join{
+        font-size: 1.1em;
+    }
+
+    #text-email{
+        font-size: 1.1em;
+
+        margin: 0px 85px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #email-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email-box{
+        margin-bottom: 10px;
+    }
+
+    #div-default-plan{
+        border-radius: 10px;
+
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        background-image: radial-gradient(circle at 50% 0%, #87112E,  #87112E, #48163F, #261948, #0D1A4C);
+
+        right: 25px;
+        left: 25px;
+
+        width: auto;
+    }
+
+    main img{
+
+        margin: 0px auto;
+        min-width: auto;
+        max-width: 90%;
+    }
+
+    #tv{
+        flex-direction: column;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #tv-text{
+        text-align: center;
+
+        margin: 110px 2% 20px 2%;
+
+        width: auto;
+    }
+
+    #tv-text > h2{
+        font-size: 2em;
+    }
+
+    #tv-text > p{
+        font-size: 1.2em;
+    }
+
+    #devices{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #devices-text{
+        text-align: center;
+
+        margin: 0 2%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #devices-text > h2{
+        font-size: 2em;
+    }
+
+    #devices-text > p{
+        font-size: 1.2em;
+        width: auto;
+    }
+
+
+    #kids{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 2% 60px 2%;
+    }
+
+    #kids-text{
+        text-align: center;
+        margin: 0px 2% 30px 2%;
+        width: auto;
+    }
+
+    #kids-text > h2{
+        font-size: 2em;
+    }
+
+    #kids-text > p{
+        font-size: 1.2em;
+    }
+
+    #mobile-downloads{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 80px 3% 70px 3%;
+    }
+
+    #mobile-downloads-text{
+        text-align: center;
+        margin: 0px 2% 30px 2% ;
+        width: auto;
+    }
+
+    #mobile-downloads-text > h2{
+        font-size: 2em;
+    }
+
+    #mobile-downloads-text > p{
+        font-size: 1.2em;
+    }
+
+    #questions-text{
+        font-size: 2em;
+    }
+
+    #div-questions > ul > li{
+        margin: 0px 30px;
+        margin-bottom: 9px;
+
+        height: 70px;
+    }
+
+
+    #div-questions > ul > li > h2{
+        font-size: 1.2em;
+    }
+
+    #email-title-footer{
+        font-size: 1.1em;
+    }
+
+    #email-footer{
+        flex-direction: column;
+    }
+
+    #phone-number{
+        margin-left: 3%;
+    }
+
+    #footer-footer > ul {   
+        columns: 2; 
+        margin: 0px 3%;
+        margin-bottom: 20px;
+    }
+
+    #select-footer{
+        margin-left: 3%;
+    }
+
+    #netflix-footer{
+        margin-left: 3%;
+    }
+}
+

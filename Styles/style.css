@@ -125,6 +125,8 @@ header > nav{
     justify-content: center;
     align-items: start;
 
+    margin: 0px 10%;
+
 }
 
 .email-box{
@@ -149,8 +151,8 @@ header > nav{
 
     padding-top: 25px;
 
-    height: 25px;
-    width: 345px;
+    height: 50%;
+    width: 100%;
 }
 
 .email-box > input:enabled{
@@ -216,7 +218,7 @@ header > nav{
     justify-content: center;
     align-items: start;
 
-    background-image: radial-gradient(circle at 50% -150%, #87112E, #87112E, #87112E,#5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
+    background-image: radial-gradient(circle at 50% 0%, #87112E, #87112E, #87112E,#5D153A,#48163F,#261948,#0D1A4C,#060E2D,#000413);
 
     margin-top: -65px;
 
