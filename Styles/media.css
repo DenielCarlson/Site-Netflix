@@ -367,7 +367,7 @@
 
 @media (min-width: 0px) and (max-width: 599px){
     header{
-        height: 700px;
+        height: auto;
     }
 
     header > nav{
@@ -408,22 +408,32 @@
     }
 
     #background-default-plan{
+        padding-top: 30px;
+
         background-color: var(--default-background-main-color);
     }
 
     #div-default-plan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 10px;
 
         margin: 0px 8%;
-        margin-top: 0px;
+        margin-top: 20;
         margin-bottom: 0%;
-        padding-bottom: 20px;
+        padding: 20px;
+        padding-top: 40px;
 
         background-image: radial-gradient(circle at 50% 0%, #87112E,  #87112E, #48163F, #261948, #0D1A4C);
 
         width: auto;
 
         position: unset;
+    }
+
+    #div-default-plan-text{
+        margin: 0px;
     }
 
     main img{
@@ -438,12 +448,14 @@
 
         justify-content: space-between;
         align-items: center;
+
+        padding-top: 50px;
     }
 
     #tv-text{
         text-align: center;
 
-        margin: 350px 2% 20px 2%;
+        margin: 0px 2% 20px 2%;
 
         width: auto;
     }
