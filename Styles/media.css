@@ -262,6 +262,7 @@
 
     #devices-text > p{
         font-size: 1.2em;
+        margin: 0px 2% 30px 2%;
         width: auto;
     }
 
@@ -364,9 +365,9 @@
 
 
 
-@media (min-width: 300px) and (max-width: 599px){
+@media (min-width: 0px) and (max-width: 599px){
     header{
-        height: 500px;
+        height: 700px;
     }
 
     header > nav{
@@ -393,7 +394,7 @@
     #text-email{
         font-size: 1.1em;
 
-        margin: 0px 85px;
+        margin: 0px 5%;
         margin-top: 20px;
         margin-bottom: 15px;
     }
@@ -402,24 +403,27 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        margin: 0px 0px;
     }
 
-    .email-box{
-        margin-bottom: 10px;
+    #background-default-plan{
+        background-color: var(--default-background-main-color);
     }
 
     #div-default-plan{
         border-radius: 10px;
 
-        margin-top: 20px;
+        margin: 0px 8%;
+        margin-top: 0px;
+        margin-bottom: 0%;
         padding-bottom: 20px;
 
         background-image: radial-gradient(circle at 50% 0%, #87112E,  #87112E, #48163F, #261948, #0D1A4C);
 
-        right: 25px;
-        left: 25px;
-
         width: auto;
+
+        position: unset;
     }
 
     main img{
@@ -439,7 +443,7 @@
     #tv-text{
         text-align: center;
 
-        margin: 110px 2% 20px 2%;
+        margin: 350px 2% 20px 2%;
 
         width: auto;
     }
@@ -460,9 +464,11 @@
     #devices-text{
         text-align: center;
 
-        margin: 0 2%;
+        margin: 0px 2%;
         margin-top: 15px;
         margin-bottom: 20px;
+
+        width: auto;
     }
 
     #devices-text > h2{
@@ -471,6 +477,7 @@
 
     #devices-text > p{
         font-size: 1.2em;
+        margin: 0px 2% 30px 2%;
         width: auto;
     }
 
@@ -555,6 +562,11 @@
 
     #netflix-footer{
         margin-left: 3%;
+    }
+
+    .email-box{
+        margin-bottom: 10px;
+        width: 65%;
     }
 }
 
