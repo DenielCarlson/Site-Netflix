@@ -60,14 +60,25 @@ header > nav{
     width: 180px;
 }
 
+#img-languages{
+    filter: invert();
+    width: 18px;
+
+    position: absolute;
+    top: 18%;
+    right: 85%;
+}
+
 /*Idiomas*/
 .select-languages{
     background-color: var(--default-select-input-color);
 
-    text-align: center;
+    text-align: left;
     font-size: 1em;
 
     border-radius: 5px;
+
+    padding-left: 35px;
 
     height: 30px;
     width: 150px;
@@ -78,6 +89,10 @@ header > nav{
     outline-style: solid;
     outline-color: white;
     outline-offset: 3px;
+}
+
+#language-login{
+    position: relative;
 }
 
 
@@ -262,7 +277,6 @@ header > nav{
     margin-top: 10px;
 }
 /*para todas as imagens dentro de main, porque vão seguir o mesmo padrão*/
-
 main img{
     align-self: flex-start;
 
@@ -364,26 +378,91 @@ main img{
     align-items: center;
 
     margin-bottom: 7px;
-    padding-top: 80px;
-    padding-bottom: 70px;
+    padding: 100px 150px 50px 150px;
 
     background-color: var(--default-background-main-color);
 }
 
 #mobile-downloads-text{
-    width: 600px;
+    margin-left: 10px;
+    width: 50%;
 }
 
 #mobile-downloads-text > h2{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     font-weight: bolder;
-
-    margin-bottom: 20px;
 }
 
 #mobile-downloads-text > p{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    
+}
+
+#box{
+    display: flex;
+    justify-content: end;
+    background-color: #448ED6;
+
+    width: 44%;
+    height: 100%;
+    position: relative;
+}
+
+#img-mobile{
+    min-width: none;
+    max-width: none;
+    width: 100%;
+}
+
+#box-animation-download{
+    background-color: #261948;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 15px;
+    border: 1px solid rgb(119, 118, 118);
+
+    margin: 0px auto;
+    padding: 5px;
+
+    max-width: 400px;
+    min-width: 200px;
+    background-color: var(--default-background-main-color);
+
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    left: 20%;
+}
+
+#img-box-animation-download{
+
+    margin-top: 2px;
+    margin-right: 0px;
+    margin-left: 5px;
+
+    min-width: 10%;
+    max-width: 18%;
+
+    height: 95%;
+}
+
+#box-animation-download-text{
+    margin-left: 15px;
+}
+
+#box-animation-download-text > h2{
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#box-animation-download-text > p{
+    font-size: 0.9em;
+    color: #0071EB;
+
+    width: 100%;
 }
 
 /*Perguntas - footer*/
@@ -496,6 +575,20 @@ main img{
 #footer-footer > ul > li{
     font-size: 0.9em;
     margin-bottom: 20px;
+}
+
+#div-select-footer{
+    position: relative;
+}
+
+#img-languages-footer{
+    filter: invert();
+    width: 18px;
+
+    position: absolute;
+    top: 10%;
+    left: 20.7%;
+
 }
 
 #select-footer{
